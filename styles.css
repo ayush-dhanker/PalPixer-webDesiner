@@ -44,7 +44,7 @@ nav {
   font-weight: 600;
 }
 
-.navigation ul li:hover {
+.navigation ul :hover {
   background-color: #1a1a67;
 }
 
@@ -55,7 +55,6 @@ nav {
 
 .hamburger {
   display: block;
-  /* position: absolute; */
   top: 5%;
   right: 8%;
   width: 30px;
@@ -101,8 +100,6 @@ nav {
   transform: rotate(-45deg) translate(6px, -5px);
 }
 
-/* /////////////////////////////////// */
-
 .content {
   margin-top: 88px;
   width: 100%;
@@ -143,6 +140,7 @@ nav {
   border: 2px solid #011635;
   width: 132px;
   font-weight: 600;
+  transition: 0.5s;
 }
 
 .btn-1 {
@@ -151,9 +149,18 @@ nav {
   margin-right: 24px;
 }
 
+.btn-1:hover {
+  background-color: #0055ba;
+}
+
 .btn-2 {
   color: #011635;
   background-color: transparent;
+}
+
+.btn-2:hover {
+  color: white;
+  background-color: #0055ba;
 }
 
 .picture-part {
@@ -173,7 +180,6 @@ nav {
   position: absolute;
   animation-duration: 4s;
   animation-fill-mode: forwards;
-  /* animation-timing-function: ease-in-out; */
 }
 
 .img-1 {
